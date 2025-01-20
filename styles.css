@@ -1,0 +1,38 @@
+.wrapper {
+border: color(rgb(64, 63, 63) red green blue);
+display: grid;
+grid-template-columns: repeat (5, 1fr); 
+grid-template-rows: repeat(4, 0.5fr);
+grid-column-gap: 15px;
+grid-row-gap: 20px;
+
+}
+
+.wrapper > div {
+background-color: white;
+border: 2px solid #cccccc;
+padding: 2em ;
+}
+
+.text { grid-area: 1 / 1 / 2 / 2 ; }
+.avatar { grid-area: 1 / 3 / 2 / 4; }
+.ballerina { grid-area: 2 / 1 / 3 / 2; }
+.f1 { grid-area: 2 / 2 / 3 / 3; }
+.backtan { grid-area: 3 / 1 / 4 / 3; }
+.fantastic { grid-area: 2 / 3 / 4 / 3; }
+.heretic { grid-area: 2 / 5 / 3 / 4; }
+.minecraft { grid-area: 3 / 5 / 4 / 4; }
+.mission { grid-area: 4 / 1 / 5 / 2; }
+.superman { grid-area: 4 / 2 / 5 / 3; }
+.mickey17 { grid-area: 4 / 4 / 5 / 3; }
+
+
+.text {
+display: grid;
+grid-template-columns: repeat(5, 2fr);
+grid-auto-rows: 100%;
+gap: 10px;
+border: 1px solid black;
+}
+
+
